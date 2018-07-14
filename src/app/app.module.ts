@@ -12,6 +12,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ToDoListPage } from '../pages/toDoList/toDoList.component';
 import { FinishedIssuesPage } from '../pages/finishedIssues/finishedIssues.component';
 
+// Services
+import { WishesService } from '../services/wishes.service';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -33,6 +36,7 @@ import { FinishedIssuesPage } from '../pages/finishedIssues/finishedIssues.compo
   providers: [
     StatusBar,
     SplashScreen,
+    WishesService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
