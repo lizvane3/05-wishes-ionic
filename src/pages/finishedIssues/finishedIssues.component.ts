@@ -1,11 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 @Component({
-  selector: 'app-finished-issues',
+  selector: 'page-finished-issues',
   templateUrl: 'finishedIssues.component.html'
 })
-export class FinishedIssuesComponent implements OnInit {
+export class FinishedIssuesPage {
   constructor() { }
-
-  ngOnInit() { }
 
 }
