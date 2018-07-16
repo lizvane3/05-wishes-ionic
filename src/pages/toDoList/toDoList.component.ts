@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { WishesService } from '../../services/wishes.service';
+import { List } from '../../models';
 
 @Component({
   selector: 'page-to-do-list',
@@ -8,4 +9,7 @@ import { WishesService } from '../../services/wishes.service';
 export class ToDoListPage {
   constructor(public wishesService: WishesService) { }
   
+  listSelected(list: List) {
+    console.log(list);
+  }
 }
