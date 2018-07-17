@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // Components
 import { ToDoListPage } from '../pages/toDoList/toDoList.component';
 import { FinishedIssuesPage } from '../pages/finishedIssues/finishedIssues.component';
+import { AddPage } from '../pages/add/add.component';
 
 // Services
 import { WishesService } from '../services/wishes.service';
@@ -20,6 +21,7 @@ import { WishesService } from '../services/wishes.service';
     MyApp,
     ToDoListPage,
     FinishedIssuesPage,
+    AddPage,
     TabsPage
   ],
   imports: [
@@ -31,6 +33,7 @@ import { WishesService } from '../services/wishes.service';
     MyApp,
     ToDoListPage,
     FinishedIssuesPage,
+    AddPage,
     TabsPage
   ],
   providers: [
