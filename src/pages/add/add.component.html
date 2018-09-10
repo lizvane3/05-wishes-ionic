@@ -17,10 +17,19 @@
         <ion-list-header>
             Things to do
         </ion-list-header>
-        <button ion-item detail-none *ngFor='let item of list.items' class='animated fadeInDown' (click)='updateTask(item)'>
-            <ion-icon *ngIf='!item.finished' name="square-outline"></ion-icon>
-            <ion-icon *ngIf='item.finished' name="checkbox-outline"></ion-icon>
-            {{item.desc}}
-        </button>
+        <ion-item-sliding *ngFor='let item of list.items; let i = index' class='animated fadeInDown'>
+            <button ion-item detail-none (click)='updateTask(item)'>
+                <ion-icon *ngIf='!item.finished' name="square-outline"></ion-icon>
+                <ion-icon *ngIf='item.finished' name="checkbox-outline"></ion-icon>
+                {{item.desc}}
+            </button>
+
+            <ion-item-options side="right">
+                <button ion-button color="danger" icon-only (click)='delteItem(i)'>
+                  <ion-icon name="close"></ion-icon>
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+
     </ion-list>
 </ion-content>

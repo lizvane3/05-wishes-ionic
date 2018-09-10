@@ -32,5 +32,9 @@ export class AddPage {
   updateTask(item:ListItem){
     item.finished = !item.finished;
   }
+
+  delteItem(idx){
+    this.list.items.splice(idx,1);
+  }
 }
    
