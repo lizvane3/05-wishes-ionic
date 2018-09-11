@@ -14,8 +14,8 @@ export class AddPage {
   constructor(public wishesService: WishesService, private navParams: NavParams) { 
     
     const titulo = this.navParams.get('titulo');
-    //console.log(this.navParams.get('titulo'));
      this.list = new List(titulo);
+     this.wishesService.addList(this.list);
 
 
   }
